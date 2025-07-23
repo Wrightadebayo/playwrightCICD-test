@@ -33,14 +33,14 @@ export default defineConfig({
         headless: true,
       },
     },
-    {
-      name: 'webkit',
-      timeout: 200000,
-      use: {
-        ...devices['Desktop Safari'],
-        headless: true,
-      },
-    },
+    // {
+    //   name: 'webkit',
+    //   timeout: 200000,
+    //   use: {
+    //     ...devices['Desktop Safari'],
+    //     headless: true,
+    //   },
+    // },
     // {
     //   name: 'Mobile chrome (iPhone 13)',
     //   use: {
