@@ -23,8 +23,8 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install
 
-      - name: Run only dragAndDrop.spec.js
-        run: npx playwright test tests/dragAndDrop.spec.js
+      - name: Run only fixturescontext.spec.js
+        run: npx playwright test tests/fixturescontext.spec.js
 
 
 #         git add .
