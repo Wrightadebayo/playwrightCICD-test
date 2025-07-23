@@ -25,3 +25,8 @@ jobs:
 
       - name: Run only dragAndDrop.spec.js
         run: npx playwright test tests/dragAndDrop.spec.js
+
+
+#         git add .
+# git commit -m "Run drag and drop test in CI"
+# git push origin main

@@ -14,8 +14,8 @@ export default defineConfig({
     trace: 'on-first-retry',
     viewport: { width: 1280, height: 720 },
     headless: true,
-    screenshot: 'only-on-failure',  // ✅ Only capture screenshots if test fails
-    video: 'on-first-retry',        // ✅ Only record video during the first retry
+    screenshot: 'only-on-failure',
+    video: 'on-first-retry',
   },
 
   projects: [
@@ -23,7 +23,7 @@ export default defineConfig({
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        headless: false,
+        headless: !!process.env.CI, // ✅ Headless in CI, headed locally
       },
     },
     {
