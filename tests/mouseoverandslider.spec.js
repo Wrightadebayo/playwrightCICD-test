@@ -9,7 +9,7 @@ await page.locator('//span[contains(text(), "Login")]').hover()
 
 })
 
-test.only('slider demo ', async({page})=>{
+test('slider demo ', async({page})=>{
   await page.goto('https://www.flipkart.com/')
 await page.locator('(//*[@id="container"]//div[2])[12]').getByRole('img').first().click()
 await page.waitForTimeout(4000)
