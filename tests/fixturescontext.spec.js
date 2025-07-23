@@ -12,7 +12,7 @@ test('Test application', async({page})=>{
 })
 
 
-test.only('testing on multiple windows and tabs', async ({ browser }) => {
+test('testing on multiple windows and tabs', async ({ browser }) => {
   
   const context = await browser.newContext()
    const page = await context.newPage()

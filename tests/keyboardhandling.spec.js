@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('keyboard', async ({ page }) => {
   await page.goto('https://textbox.johnjago.com/');
-  await page.waitForTimeout(2000)
+  
   // await page.locator('//textarea').pressSequentially('wright',{delay:500})
   // await page.getByPlaceholder("Welcome! You can use this textbox for anything. It does not save any data.").pressSequentially('my name is yousefwright i am an SDET', {delay:300})
   // await page.waitForTimeout(3000)

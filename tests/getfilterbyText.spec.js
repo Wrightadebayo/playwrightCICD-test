@@ -7,5 +7,16 @@ test('launch application', async ({ page }) => {
   await page.getByRole('button').click();
 
   await page.locator('xpath=//*[@class="inventory_item"]').filter({hasText:'Sauce Labs Bike Light'}).getByRole('button',{name:'Add to cart'}).click()
-  await page.waitForTimeout(10000);
+  
+
+  await page.locator('xpath=//*[@class="inventory_item"]').filter({hasText:'Sauce Labs Fleece Jacket'}).getByRole('button',{name:'Add to cart'}).click()
+
+
+
+  await page.locator('xpath=//*[@class="inventory_item"]')
+  .filter({ hasText: 'Sauce Labs Fleece Jacket' })
+  .getByRole('button', { name: 'Remove' }) // Changed from "Add to cart"
+  .click();
+
+
 });
